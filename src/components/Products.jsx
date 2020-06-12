@@ -56,7 +56,7 @@ const product = [
     },
     {
         img: 'models/image7.png',
-        name: 'Cup',
+        name: 'Cap',
         price: '$15',
         disc: '10%',
         oldPrice: '$25',
@@ -67,7 +67,7 @@ const product = [
 
 function Products() {
     return (
-        <div class="row row-cols-4 mx-2 my-1">
+        <div class="row  row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mx-2 my-1">
             {product.map((itm) => <Card item={itm} />)}
         </div>
     )
