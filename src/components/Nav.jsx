@@ -36,23 +36,23 @@ function Nav() {
                 </li>
             </ul> */}
             <nav class="nav nav-pills flex-lg-column flex-sm-row">
-                <a class=" nav-link active" href="#">
+                <a class=" nav-link " onClick= { active } href="#">
                     <i class="fa fa-shopping-cart mr-2" aria-hidden="true"></i>
                     Clothes
                 </a>
-                <a class=" nav-link" href="#">
+                <a class=" nav-link" href="#" onClick= { active }>
                     <i class="fa fa-tag mr-2" aria-hidden="true"></i>
                     Shoes
                 </a>
-                <a class=" nav-link" href="#">
+                <a class=" nav-link" href="#" onClick= { active }>
                     <i class="fa fa-graduation-cap mr-2" aria-hidden="true"></i>
                     Cap
                 </a>
-                <a class=" nav-link" href="#">
+                <a class=" nav-link" href="#" onClick= { active }>
                     <i class="fa fa-google-wallet mr-2" aria-hidden="true"></i>
                     Wallet
                 </a>
-                <a class=" nav-link" href="#">
+                <a class=" nav-link" href="#" onClick= { active }>
                     <i class="fa fa-shopping-bag mr-2" aria-hidden="true"></i>
                     Bags
                 </a>
@@ -60,5 +60,12 @@ function Nav() {
         </div>
     )
 }
+
+function active(e) {
+    let current = document.querySelector('.active');
+    current.classList.remove('active');
+    e.target.classList.add('active'); 
+    
+ }
 
 export default Nav
